@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>smart login</title>
+</head>
+
+<body>
+
+
+
+
+<div class="body" id="clear">
+    <div class="container " id="container">
+        <div class="form-container sign-up" id="hamo" >
+            <div class="form" id="disSignUp">
+                <h1>Create Account</h1>
+                <input type="text" id="signUpName" placeholder="Name">
+                <input type="email" id="signUpEmail" placeholder="Email" class="email">
+                <small id="vaild1" class="d-none">Your Email Is Not Correct</small>
+                <input type="password" id="signUpPass" placeholder="Password">
+                <small id="vaild2" class="d-none">
+                    <p>Please follow these rules when creating a password:</p>
+                    <ul>
+                        <li>The password must be at least <strong>8 characters long</strong>.</li>
+                        <li>It must include at least <strong>one lowercase letter</strong> , <strong>one uppercase letter</strong> and <strong>one number</strong> .</li>
+                        <li>It must include at least <strong>one special character</strong> (e.g., <code>@</code>, <code>$</code>, <code>!</code>, <code>%</code>, <code>*</code>, <code>?</code>, <code>&</code>).</li>
+                    </ul>
+                </small>
+                <button id="register" class="margin">Sign Up</button>
+            </div>
+        </div>
+        <div class="form-container sign-in">
+            <div class="form">
+                <h1 class="margin">Sign In</h1>
+                <span>or use your email password</span>
+                <input type="email" id="signinEmail" placeholder="Email">
+                <input type="password" id="signinPass" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button  id="login" class="margin">Sign In</button>
+            </div>
+        </div>
+        <div class="slide-container">
+            <div class="slider">
+                <div class="slide slide-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="signIn">Sign In</button>
+                </div>
+                <div class="slide slide-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
